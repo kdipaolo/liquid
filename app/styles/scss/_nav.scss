@@ -1,8 +1,16 @@
+@-webkit-keyframes slidedown {
+  100% { top: 0%; }
+}
+@-webkit-keyframes slideup {
+  100% { top: -27%; }
+}
+
 .header {
     position: fixed;
     width:100%;
     background-color: $white;
     z-index: 3;
+    top: -27%;
     h3 {
         font-weight: 300;
         color: $mainBlue;
@@ -59,3 +67,9 @@
   
 
 }
+
+
+.slidedown {
+ -webkit-animation: slidedown 0.25s forwards;  
+}
+

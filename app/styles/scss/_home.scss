@@ -1,12 +1,18 @@
 #intro {
     background:   
-     linear-gradient($transBlue, $transBlue), 
-     url('../images/home/intro-bg.jpg');
+  linear-gradient($transBlue, $transBlue), 
+  url('../images/home/intro-bg.jpg');
   background-size: cover;
-
+  .col-md-5 {
+    text-align:right;
+  }
+  svg {
+    width:65%;
+  }
   h1 {
     color: $white;
-    font-size: 5em;
+    font-size: 4.5em;
+    margin-top: 10%;
   }
   .container {
     z-index: 2;

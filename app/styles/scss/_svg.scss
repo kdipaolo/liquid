@@ -1,43 +1,39 @@
-// MARKETS SVG
-#lantern {
-  width: 43%;
-}
-#pocketknife {
-  width: 50%;
-}
+// MOUNTAINS
 #mountains {
   width: 75%;
   
 }
-@-webkit-keyframes translate-left {
-  0%   { transform: translateX(2em)}
-  100% { opacity: 1; }
+@-webkit-keyframes move-right-left {
+  100% { transform: translateX(0em)}
 }
-@-webkit-keyframes translate-right {
-  0%   { transform: translateX(-2em)}
-  100% { opacity: 1; }
-}
-@-webkit-keyframes translate-up {
+
+@-webkit-keyframes move-up {
   100% { transform: translateY(0em) }
 }
 
-
 #mountain-left {
-  /*transform: translateX(0.5em);*/
-   -webkit-animation: translate-left 1s;
+  transform: translateX(2em);
 }
-#mountain-right {  
-  /*transform: translateX(0.5em);*/
-   -webkit-animation: translate-right 1s ;
+#mountain-right {
+ transform: translateX(-2em); 
 }
-
 #flag {
- -webkit-animation: translate-up 1s 0.25s forwards;
-  transform: translateY(4em)
+  transform: translateY(4em);
+}
+.ani #mountain-left, .ani #mountain-right {
+  /*transform: translateX(0.5em);*/
+   -webkit-animation: move-right-left 1s forwards;
+}
+.ani #flag {
+ -webkit-animation: move-up 1s 0.25s forwards;
+  
 }
 
 
 /*POCKETKNIFE*/
+#pocketknife {
+  width: 50%;
+}
 @-webkit-keyframes rotate {
   100% { 
     transform: rotate(0deg); 
@@ -45,26 +41,38 @@
   }
 }
 
-
 #knife-left {
   transform: rotate(120deg) translatey(0.5em);
   -webkit-transform-origin: 50px 50px;
- -webkit-animation: rotate 1s  forwards;
+ 
 }
 #knife-right {
   transform: rotate(-100deg) translateX(2em);
   -webkit-transform-origin: 75px 75px;
- -webkit-animation: rotate 1s 0.5s forwards;
+ 
 }
 
 #hook {
   transform: rotate(100deg) translateX(8em);
   -webkit-transform-origin: 50px 50px;
+ 
+}
+
+.ani #knife-left {
+ -webkit-animation: rotate 1s  forwards;
+}
+.ani #knife-right {
+ -webkit-animation: rotate 1s 0.5s forwards;
+}
+.ani #hook {
  -webkit-animation: rotate 1s 0.5s forwards;
 }
 
 
 /*LANTERN*/
+#lantern {
+  width: 43%;
+}
 @-webkit-keyframes rotate {
   100% { 
     transform: rotate(0deg); 
@@ -72,21 +80,31 @@
   }
 }
 
-
 #bar-left {
   transform: translateX(2em);
   -webkit-transform-origin: 50px 50px;
- -webkit-animation: rotate 1s  forwards;
+
 }
 #bar-right {
   transform: translateX(-2em);
   -webkit-transform-origin: 75px 75px;
- -webkit-animation: rotate 1s forwards;
+ 
 }
-
-
 #flame {
   transform: translateY(3em);
   -webkit-transform-origin: 50px 50px;
+ 
+}
+
+.ani #bar-left {
+ 
+ -webkit-animation: rotate 1s  forwards;
+}
+.ani #bar-right {
+
+ -webkit-animation: rotate 1s forwards;
+}
+.ani #flame {
+
  -webkit-animation: rotate 1s 0.5s forwards;
 }
