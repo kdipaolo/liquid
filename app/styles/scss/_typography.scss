@@ -1,0 +1,23 @@
+//Fonts
+
+//Quicksand
+@font-face {
+    font-family: quicksand-reg;
+    src: url('../fonts/Quicksand-Regular.otf');
+}
+@font-face {
+    font-family: quicksand-bold;
+    src: url('../fonts/Quicksand-Bold.otf');
+}
+@font-face {
+    font-family: quicksand-light;
+    src: url('../fonts/Quicksand-Light.otf');
+}
+
+h1 {
+  font-family: quicksand-light;
+}
+
+h2,h3,h4,h5,p,li,a {
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,22 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@import "scss/bits.scss";
+@import "scss/nav.scss";
+@import "scss/typography.scss";
+@import "scss/home.scss";
+
+
+
+a:hover {
+  text-decoration: none;
+}
+body {
+  background-color: #135b75;
+}
+
+//DO I NEED THIS????
+@import "scss/bootstrap-extras.scss";

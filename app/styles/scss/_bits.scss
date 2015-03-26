@@ -1,0 +1,23 @@
+// Colors
+$white: #FFF;
+$mainBlue: #2ca4da;
+$secondaryBlue: #135b75;
+$buttonOne: #cc6257;
+
+
+// Buttons
+.hollow-button {
+  color:#FFF;
+  border:2px solid $white;
+  padding:10px 20px;
+  display:inline-block;
+  margin:20px 0;
+  font-weight:bold;
+  transition: 0.3s all ease;
+  &:hover {
+    background-color: $white;
+    color: $mainBlue;
+    font-weight:bold;
+    transition: 0.3s all ease;
+  }
+}
