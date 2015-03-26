@@ -21,3 +21,24 @@ h1 {
 h2,h3,h4,h5,p,li,a {
   font-family: 'Open Sans', sans-serif;
 }
+
+h2 {
+  color: $mainBlue;
+  font-weight:bold;
+}
+
+h3 {
+  font-family: quicksand-light;
+  color: $mainBlue;
+  font-size: 2em;
+}
+
+h4 {
+  color: $mainBlue;
+  font-weight: bold;
+  padding:20px;
+}
+
+p {
+  color: $mainBlue;
+}

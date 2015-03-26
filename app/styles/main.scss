@@ -8,6 +8,7 @@ $icon-font-path: '../fonts/';
 @import "scss/nav.scss";
 @import "scss/typography.scss";
 @import "scss/home.scss";
+@import "scss/svg.scss";
 
 
 
@@ -17,6 +18,7 @@ a:hover {
 body {
   background-color: #135b75;
 }
+
 
 //DO I NEED THIS????
 @import "scss/bootstrap-extras.scss";

@@ -7,16 +7,16 @@ $buttonOne: #cc6257;
 
 // Buttons
 .hollow-button {
-  color:#FFF;
-  border:2px solid $white;
+  color: $mainBlue;
+  border:2px solid $mainBlue;
   padding:10px 20px;
   display:inline-block;
   margin:20px 0;
   font-weight:bold;
   transition: 0.3s all ease;
   &:hover {
-    background-color: $white;
-    color: $mainBlue;
+    background-color: $mainBlue;
+    color: $white;
     font-weight:bold;
     transition: 0.3s all ease;
   }

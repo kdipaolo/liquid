@@ -17,7 +17,33 @@
   .container {
     z-index: 2;
     position: relative;
+    padding: 10% 0;
+  }
+  .hollow-button {
+    color: $white; 
+    border:2px solid $white;
+    &:hover {
+      background-color: $white;
+      color: $mainBlue;
+      }
+    }
   }
 
 } // END INTRO
+
+#markets {
+  text-align: center;
+  background-color: $white;
+  .container {
+    padding:10% 0;
+  }
+  .col-md-4 {
+    text-align: center;
+    h3 {
+      padding: 30px;
+
+    }
+  }
+// } END MARKETS
+
 
