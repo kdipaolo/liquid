@@ -1,18 +1,12 @@
 #intro {
-  background: url('../images/home/intro-bg.jpg');
+    background:   
+     linear-gradient($transBlue, $transBlue), 
+     url('../images/home/intro-bg.jpg');
   background-size: cover;
 
   h1 {
     color: $white;
     font-size: 5em;
-  }
-  
-  .color-overlay {
-    background-color: rgba(19,91,117,0.8);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
   }
   .container {
     z-index: 2;
@@ -25,11 +19,10 @@
     &:hover {
       background-color: $white;
       color: $mainBlue;
-      }
     }
   }
-
-} // END INTRO
+} 
+// END INTRO
 
 #markets {
   text-align: center;
@@ -44,6 +37,83 @@
 
     }
   }
-// } END MARKETS
+} 
+// END MARKETS
 
+
+#about {
+    background:   
+     linear-gradient($transBlue, $transBlue), 
+     url('../images/home/about-bg.jpg');
+  background-size: cover;
+  text-align:center;
+
+  h2 {
+    font-family: quicksand-light;
+    color: $white;
+    font-size: 4em;
+  }
+  p {
+    color: $white;
+  }
+  .container {
+    z-index: 2;
+    position: relative;
+    padding: 10% 0;
+  }
+  .hollow-button {
+    color: $white; 
+    border:2px solid $white;
+    &:hover {
+      background-color: $white;
+      color: $mainBlue;
+    }
+  }
+} // END ABOUT
+
+#moreabout {
+  background-color: $white;
+} // END MORE ABOUT
+
+#values {
+  text-align: center;
+  background-color: $white;
+  .col-md-6 {
+    text-align: left;
+  }
+} // END VALUES
+
+#signup {
+  background:   
+     linear-gradient($transBlue, $transBlue), 
+     url('../images/home/signup-bg.jpg');
+  background-size: cover;
+  padding: 10% 0;
+  text-align: center;
+  h2 {
+    font-weight: 300;
+    color: $white;
+  }
+  input {
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 15px;
+    padding:10px;
+    color: $white;
+    margin: 10px 0;
+  }
+  input:nth-of-type(3) {
+    width:50%;
+  }
+  input[type="submit"] {
+    background-color: $white;
+    color: $mainBlue;
+    width:50%;
+  }
+
+  .container {
+    z-index: 2;
+    position: relative;
+  }
+} // END SIGN UP
 
