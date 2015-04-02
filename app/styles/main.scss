@@ -4,11 +4,15 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+//DO I NEED THIS????
+@import "scss/bootstrap-extras.scss";
+
 @import "scss/bits.scss";
 @import "scss/nav.scss";
 @import "scss/typography.scss";
 @import "scss/home.scss";
 @import "scss/svg.scss";
+
 
 
 
@@ -20,8 +24,6 @@ body {
 }
 
 
-//DO I NEED THIS????
-@import "scss/bootstrap-extras.scss";
 
 // .container {
 //   @include container-fixed;
@@ -35,5 +37,3 @@ body {
 //   @media (min-width: $screen-lg-min) {
 //     width: $container-lg;
 //   }
-
-$screen-lg-min : 50px;  

@@ -6,70 +6,125 @@
 }
 
 .header {
+  position: fixed;
+  width:100%;
+  background-color: $white;
+  z-index: 3;
+  top: -27%;
+  transition: 0.4s all ease;
+
+  @media (max-width: $screen-xs) {
     position: fixed;
-    width:100%;
-    background-color: $white;
+    width: 100%;
+    background-color: #FFF;
     z-index: 3;
-    top: -27%;
-    h3 {
-        font-weight: 300;
-        color: $mainBlue;
-        padding: 20px 0;
-        display: inline-block;
+    opacity: 1;
+    top: 0%;
+    height:0;
+    opacity:0;
+    background-color: $mainBlue;
+
+  }
+
+  .mobile-x {
+    display:none;
+    @media (max-width: $screen-xs) {
+      display: inline-block;
+      width: 20%;
     }
 
-    a {
-        font-weight: 600;
-        color: $mainBlue;
-        &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: -3px;
-          width: 100%;
-          height: 2px;
-          opacity:0;
-          background: $mainBlue;
-          transform: translateY(5px);
-          transition: transform 0.3s, opacity 0.3s;
-          pointer-events: none;
-        }
-      
-        &:hover:after {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
+  }
+  h3 {
+    font-weight: 300;
+    color: $mainBlue;
+    padding: 20px 0;
+    display: inline-block;
+  }
 
-    li {
-      padding:30px 15px;
+  a {
+    font-weight: 600;
+    color: $mainBlue;
+    @media (max-width: $screen-xs) {
+      color: $white
     }
-    .logo {
-      width:30px;
-      margin-top: -10px;
-      margin-right: 10px;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 2px;
+      opacity:0;
+      background: $mainBlue;
+      transform: translateY(5px);
+      transition: transform 0.3s, opacity 0.3s;
+      pointer-events: none;
+    }
+    
+    &:hover:after {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  li {
+    padding:30px 15px;
+
+    @media (max-width: $screen-xs) {
+      float: none!important;
+      text-align: center;
+      width: 100%;
+      font-size: 1.25em;
+
+    }
+  }
+  .pull-right {
+    @media (max-width: $screen-xs) {
+      float:none!important;
+    }
+  }
+  .logo {
+    width:30px;
+    margin-top: -10px;
+    margin-right: 10px;
+  }
 }
+.signup {
+  padding: 20px 0 20px 10px!important;;
+  a{
+    padding:10px 15px;
+    background-color: $buttonOne;
+    color: $white;
+    transform-style: preserve-3d;
+    &:hover {
+      transform: rotateX(15deg);
     }
-    .signup {
-      padding: 20px 0 20px 10px!important;;
-      a{
-      padding:10px 15px;
-      background-color: $buttonOne;
-      color: $white;
-      transform-style: preserve-3d;
-      &:hover {
-        transform: rotateX(15deg);
-      }
-      &:after {
-        display:none;
-      }
+    &:after {
+      display:none;
     }
+  }
   
 
 }
+.ani {
+  height:100%;
+  opacity: 1;
+  transition: 0.4s all ease;
+}
 
+.mobile-menu {
+  width: 12%;
+  top: 2%;
+  left: 3%;
+  display:none;
+  @media (max-width: $screen-xs) {
+    display:block;
+  }
+}
 
 .slidedown {
  -webkit-animation: slidedown 0.25s forwards;  
 }
+
+
 

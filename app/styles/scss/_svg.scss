@@ -33,7 +33,13 @@
 /*POCKETKNIFE*/
 #pocketknife {
   width: 50%;
+  @media (max-width: $screen-md) {
+    width: 20%;
+  }
+
 }
+
+
 @-webkit-keyframes rotate {
   100% { 
     transform: rotate(0deg); 
@@ -72,6 +78,9 @@
 /*LANTERN*/
 #lantern {
   width: 43%;
+    @media (max-width: $screen-md) {
+    width: 17%;
+  }
 }
 @-webkit-keyframes rotate {
   100% { 
